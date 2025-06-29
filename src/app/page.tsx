@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import TopNav from "@/components/nav";
+import Header from "./components/layouts/header";
 
 export const metadata: Metadata = {
   title: "Ike Design Dev ",
@@ -10,8 +10,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <TopNav/>
-      <h2>This is the landing page</h2>
+      <Header title="Ogechi Ike" subtitle="Creative Technologist"/>
     </>
   );
 }

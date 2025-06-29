@@ -1,5 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
+import Header from "../components/layouts/header";
 
 export const metadata: Metadata ={
   title: "Contact Me",
@@ -8,7 +9,11 @@ export const metadata: Metadata ={
 
 const Contact = () => {
   return(
-    <h2>This is the contact page.</h2>
+    <>
+      <Header 
+      title="How to Reach Me" 
+      subtitle="Please use one of the methods below."/>
+    </>
   )
 }
 
