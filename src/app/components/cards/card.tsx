@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
+import Button from '../buttons/button'
+
 
 interface CardProps{
   title?: string,
@@ -24,9 +25,7 @@ const Card: React.FC<CardProps> = ({title, link, image, imgText}) => {
       <div className="card_text_container">
         <h4>{cardTitle}</h4>
       </div>
-      <button>
-        <Link href={url}>Learn More</Link>
-      </button>
+      <Button link={url} text="Learn More"/>
     </div>
   )
 }

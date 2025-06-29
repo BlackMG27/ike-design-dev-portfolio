@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next';
+import Header from '../components/layouts/header';
 
 export const metadata: Metadata ={
   title: "About IkeDesignDev",
@@ -8,7 +9,12 @@ export const metadata: Metadata ={
 
 export default function About() {
   return(
-    <h2>This is the about page</h2>
+    <>
+      <Header 
+        title='Finding My Threads' 
+        subtitle='How I became a Creative Technologist'
+        />
+    </>
   )
 }
 
