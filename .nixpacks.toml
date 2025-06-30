@@ -1,0 +1,14 @@
+cat > .nixpacks.toml << 'EOF'
+[variables]
+NODE_VERSION = "23.10.0"
+NIXPACKS_NODE_PACKAGE_MANAGER = "pnpm"
+
+[install]
+cmd = "pnpm install --frozen-lockfile"
+
+[build]
+cmd = "pnpm run build"
+
+[start]
+cmd = "pnpm start"
+EOF
