@@ -1,14 +1,15 @@
-cat > .nixpacks.toml << 'EOF'
 [variables]
-NODE_VERSION = "23.10.0"
+NODE_VERSION = "20.18.0"
 NIXPACKS_NODE_PACKAGE_MANAGER = "pnpm"
 
-[install]
+[phases.install]
 cmd = "pnpm install --frozen-lockfile"
 
-[build]
+[phases.build]
 cmd = "pnpm run build"
 
 [start]
 cmd = "pnpm start"
-EOF
+
+[build]
+env = ["NODE_ENV=production"]
